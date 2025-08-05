@@ -1,0 +1,433 @@
+/* Colores */
+:root {
+    --primary-color: #3b5110;
+    --secondary-color: #171718;
+    --background-color: #f4f4f4;
+    --text-light: #ffffff;
+}
+
+/* Reset y estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    background-color: var(--background-color);
+    color: var(--secondary-color);
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+/* Encabezado y Navegación */
+header {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+}
+
+header .logo a {
+    color: var(--text-light);
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav .nav-links {
+    list-style: none;
+    display: flex;
+}
+
+nav .nav-links li a {
+    color: var(--text-light);
+    text-decoration: none;
+    padding: 0 15px;
+    transition: color 0.3s ease-in-out;
+}
+
+nav .nav-links li a:hover {
+    color: var(--background-color);
+}
+
+/* Menú hamburguesa (oculto en escritorio) */
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: var(--text-light);
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+/* Contenido Principal */
+h1 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+}
+   
+
+.service-card {
+    background: var(--text-light);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.service-card h2 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+
+}
+
+/* Pie de página */
+footer {
+    background: var(--secondary-color);
+    color: var(--text-light);
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+/* Media Queries para diseño responsive */
+@media screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .nav-links {
+        position: fixed;
+        right: 0;
+        height: 92vh;
+        top: 8vh;
+        background-color: var(--primary-color);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+
+    .nav-links {
+        position: fixed;
+        right: 0;
+        height: 92vh;
+        top: 8vh;
+        background-color: var(--primary-color);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .nav-active {
+        transform: translateX(0%);
+    }
+
+    .toggle .line1 {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+    .toggle .line2 {
+        opacity: 0;
+    }
+    .toggle .line3 {
+        transform: rotate(45deg) translate(-5px, -6px);
+
+
+
+
+
+/* --- Estilos para el menú desplegable --- */
+.dropdown {
+    position: relative; 
+    ...
+}
+/* ... todo el código del menú desplegable ... */
+}
+    }
+
+/* Interlineado para todos los párrafos */
+p {
+    line-height: 1.5;
+}
+
+/* Espacio entre párrafos para mejorar la legibilidad */
+p {
+    line-height: 1.5;
+    margin-bottom: 1rem; /* Añade un espacio de 16px debajo de cada párrafo */
+}
+/* Espacio después de los subtítulos */
+h2 {
+    margin-bottom: 1.25rem; /* Un poco más de espacio para los títulos principales de sección */
+}
+
+h3 {
+    margin-bottom: 0.75rem; /* Menos espacio para los subtítulos dentro de las secciones */
+}
+.service-card-link {
+    text-decoration: none;
+    color: inherit; /* Para que el color del texto se herede de la tarjeta */
+}
+
+
+/* Espacio entre los bloques de texto para mejor legibilidad */
+.service-details h3, .service-details h4 {
+    margin-top: 2rem; /* Espacio antes del subtítulo */
+    margin-bottom: 0.5rem; /* Pequeño espacio después del subtítulo */
+}
+
+/* Espacio para el primer párrafo después de un subtítulo, para que no quede pegado */
+.service-details h3 + p, .service-details h4 + p {
+    margin-top: 0;
+}
+
+.main-image {
+    width: 300%;
+    max-width: 90%; /* Aumentamos el ancho máximo */
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+/* Estilo para las imágenes de cada servicio */
+
+/* Imagen para la página de Consulta Bibliográfica */
+.biblioteca-img {
+    width: 100%;
+    max-width: 600px; /* Tamaño más pequeño */
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Imagen para la página de Paquetes Educativos */
+.paquetes-img {
+    width: 100%;
+    max-width: 800px; /* Tamaño más grande */
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Imagen para la página de Club de Caminantes */
+.caminantes-img {
+    width: 100%;
+    max-width: 700px; /* Tamaño intermedio */
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para la navegación entre servicios */
+.service-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    padding: 20px 0;
+    border-top: 1px solid var(--border-color);
+}
+
+.nav-arrow {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-arrow:hover {
+    color: var(--secondary-color);
+}
+
+.arrow-icon {
+    font-size: 2rem;
+    line-height: 1;
+    margin: 0 10px;
+}
+
+.left-arrow .arrow-icon {
+    order: -1; /* Para colocar la flecha a la izquierda del texto */
+}
+
+/* Opcional: Estilos para cuando no hay un enlace */
+.disabled-arrow {
+    color: var(--text-muted);
+    pointer-events: none;
+    cursor: default;
+}
+
+/* ---- Estilos de la portada (Hero Section) ---- */
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 70vh; /* Ajusta la altura de la sección. '70vh' significa 70% de la altura de la ventana del navegador */
+    background-image: url('images/portada.jpg.jpg'); /* Asegúrate de que este nombre coincida con tu archivo */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Capa semitransparente para oscurecer la imagen */
+}
+
+.hero-content {
+    position: relative; /* Para que el contenido esté encima de la capa de fondo */
+    z-index: 10;
+    padding: 0 20px;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #fff; /* Aseguramos que el título sea blanco */
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.hero-button {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.hero-button:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Opcional: Estilo para un texto introductorio debajo de la portada */
+.intro-text {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 1.1rem;
+    color: var(--text-color);
+}
+
+/* ---- Estilos de la sección de Bienvenidos ---- */
+.welcome-section {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #f9f9f9; /* Un color de fondo suave para diferenciarla */
+    color: var(--text-color);
+}
+
+.welcome-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+.welcome-section p {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* ---- Estilos para la cuadrícula de servicios ---- */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.service-card-link {
+    text-decoration: none;
+    color: var(--text-color);
+    display: block;
+    height: 100%;
+}
+
+.service-card {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.service-card h2 {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    font-size: 1rem;
+    color: var(--text-muted);
+}
