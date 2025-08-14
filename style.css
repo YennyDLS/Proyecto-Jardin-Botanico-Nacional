@@ -232,7 +232,7 @@ h3 {
 /* Imagen para la página de Consulta Bibliográfica */
 .biblioteca-img {
     width: 100%;
-    max-width: 600px; /* Tamaño más pequeño */
+    max-width: 1000px; /* Tamaño más pequeño */
     height: auto;
     display: block;
     margin: 20px auto;
@@ -431,3 +431,198 @@ h3 {
     font-size: 1rem;
     color: var(--text-muted);
 }
+/* --- Estilos para la página de Boletería --- */
+.store-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.store-card {
+    display: block;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+.store-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.store-card h2 {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.store-card p {
+    font-size: 1rem;
+    color: var(--text-muted);
+}
+```css
+.sustentante-info {
+display: flex;
+align-items: center; /* Para alinear verticalmente la imagen y el texto */
+margin-top: 20px;
+}
+```css
+.sustentante-foto {
+width: 2.5em; /* El ancho será 2.5 veces el tamaño de la fuente del elemento padre /
+height: auto;
+border-radius: 8px;
+margin-right: 0.5em; / Ajuste del margen usando 'em' también */
+vertical-align: middle;
+object-fit: contain;
+}
+
+```css
+.sustentante-foto {
+border-radius: 8px;
+margin-right: 20px;
+vertical-align: middle;
+}
+```
+
+}
+
+.sustentante-texto {
+font-size: 0.9em; /* Ajusta el tamaño del texto */
+line-height: 1.4;
+}
+```
+
+/* --- Estilos para la sección de Consulta Bibliográfica --- */
+.bibliografica-info {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+    line-height: 1.8;
+}
+
+.bibliografica-info h3,
+.bibliografica-info h4 {
+    color: var(--primary-color);
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.bibliografica-info p {
+    margin-bottom: 1rem;
+}
+/* --- Estilos para la sección de Recorridos Guiados --- */
+.recorridos-info {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+    line-height: 1.8;
+}
+
+.recorridos-info h3,
+.recorridos-info h4 {
+    color: var(--primary-color);
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.recorridos-info p {
+    margin-bottom: 1rem;
+}
+/* --- Estilos para la sección de Ventas de Plantas y Semillas --- */
+.ventas-info {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+    line-height: 1.8;
+}
+
+.ventas-info h3,
+.ventas-info h4 {
+    color: var(--primary-color);
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.ventas-info p {
+    margin-bottom: 1rem;
+}
+/* --- Estilos para la sección de Club de Caminantes --- */
+.caminantes-info {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+    line-height: 1.8;
+}
+
+.caminantes-info h3,
+.caminantes-info h4 {
+    color: var(--primary-color);
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.caminantes-info p {
+    margin-bottom: 1rem;
+}
+
+/* --- Estilos para la sección de Paquetes Educativos --- */
+.paquetes-info {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+    line-height: 1.8;
+}
+
+.paquetes-info h3,
+.paquetes-info h4 {
+    color: var(--primary-color);
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.paquetes-info p {
+    margin-bottom: 1rem;
+}
+
+/* --- Estilos para la sección de Alquiler de Espacios --- */
+.alquiler-info {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+    line-height: 1.8;
+}
+
+.alquiler-info h3,
+.alquiler-info h4 {
+    color: var(--primary-color);
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.alquiler-info p {
+    margin-bottom: 1rem;
+}
+
+/* --- Estilos para el logo en el encabezado --- */
+.header-logo {
+    display: flex;
+    align-items: center;
+}
+
+.main-logo {
+    max-width: 190px; /* Ajusta este valor para controlar el tamaño del logo */
+    height: auto;
+}
+
+/* Opcional: Si quieres que el logo ocupe todo el ancho del header */
+/*
+.main-logo {
+    width: 100%;
+    height: auto;
+}
+*/
